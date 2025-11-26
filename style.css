@@ -29,9 +29,19 @@ body {
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: 'XrayTedSkew';
+  src: url("fonts/xray-ted.skew.woff2") format("woff2"),
+       url("fonts/xray-ted.skew.woff") format("woff"),
+       url("fonts/xray-ted.skew.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .logo-font {
-  font-family: 'Metal Mania', cursive;
-  letter-spacing: 1px;
+  font-family: 'XrayTedSkew', sans-serif;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px #e60000;
 }
 
 /* Header */
