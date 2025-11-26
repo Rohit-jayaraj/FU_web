@@ -33,13 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const scrollBottomBtn = document.getElementById('scrollBottomBtn');
   const form = document.querySelector('form');
 
-  // Prevent form reload
-  if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      alert('Message sent! (This is a placeholder)');
-    });
-  }
 
   // Scroll buttons always visible
   if (scrollTopBtn && scrollBottomBtn) {
