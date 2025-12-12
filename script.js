@@ -16,7 +16,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Prevent form reload
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  if (!form) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); // stop default redirect
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { "Accept": "application/json" }
+    }).then(() => {
+      alert("Message sent!");
+      form.reset();
+    }).catch(() => {
+      alert("Error sending message. Try again.");
+    });
+  });
+});
+
 
 
 // Scroll to Top/Bottom
