@@ -17,15 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Prevent form reload
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('form');
-  if (form) {
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      alert('Message sent! (This is a placeholder)');
-    });
-  }
-});
+
 
 // Scroll to Top/Bottom
 document.addEventListener('DOMContentLoaded', () => {

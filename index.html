@@ -88,9 +88,11 @@
     <section id="contact">
       <h2 class="logo-font">Contact / Booking</h2>
       <p>Email: <span class="accent">email here</span></p>
-      <form>
+      <form action="https://formsubmit.co/rohit.jayaraj@gmail.com" method="POST">
+        <input type="hidden" name="_next">
+        <input type="hidden" name="_captcha" value="false">
         <input type="text" placeholder="Your name">
-        <input type="email" placeholder="Your email">
+        
         <textarea placeholder="Message"></textarea>
         <button type="submit" class="btn">Send</button>
       </form>
