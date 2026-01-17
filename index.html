@@ -39,6 +39,8 @@
       <div class="hero-image">[Band photo / poster art goes here]</div>
     </section>
     <button id="scrollBottomBtn" class="scroll-btn">▼</button>
+
+
     <section id="about">
       <h2 class="logo-font">About</h2>
       <p>Born from neon nights and back-alley amps, Fate Unknown blend glittering glam hooks with the abrasive honesty of punk.</p>
@@ -46,11 +48,12 @@
         <div>
           <h3>Members</h3>
           <ul>
-            <li>Jaidan — Vocals</li>
-            <li>Rohit — Guitar</li>
-            <li>Shaurya — Bass</li>
-            <li>Adithya — Drums</li>
+            <li><button class="member-btn" data-member="jaidan">Jaidan - Vocals</button></li>
+            <li><button class="member-btn" data-member="rohit">Rohit - Guitar</button></li>
+            <li><button class="member-btn" data-member="shaurya">Shaurya - Bass</button></li>
+            <li><button class="member-btn" data-member="adithya">Adithya - Drums</button></li>
           </ul>
+
         </div>
         <div>
           <h3>Influences</h3>
@@ -88,7 +91,7 @@
     <section id="contact">
       <h2 class="logo-font">Contact / Booking</h2>
       <p>Email: <span class="accent">email here</span></p>
-      <form action="https://formsubmit.co/417198371e94848ff28546e805d3b9f6" method="POST">
+      <form action="https://formsubmit.co/fateunknownband@gmail.com" method="POST">
       <input type="hidden" name="_next">
       <input type="hidden" name="_captcha" value="false">
       <input type="text" name="name" placeholder="Your name" required>
@@ -104,5 +107,14 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <div id="memberModal" class="modal hidden">
+  <div class="modal-content">
+    <button class="modal-close">✕</button>
+    <h3 id="modalName"></h3>
+    <p id="modalInfo"></p>
+  </div>
+</div>
+
 </body>
 </html>
