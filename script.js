@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('form');
   if (!form) return;
 
-  /*form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', (e) => {
     e.preventDefault(); // stop default redirect
 
     const formData = new FormData(form);
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alert("Error sending message. Try again.");
     });
   });
-});*/
+});
 
 
 
